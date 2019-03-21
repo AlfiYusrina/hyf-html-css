@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700');
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+li {
+  list-style: none;
+  font-family: "Hind Siliguri";
+}
+.hidden {visibility: hidden;}
+.intro {
+  display: flex;
+  align-items: center;
+}
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-picture-text {
+  font-family: Bitter;
+  font-size: 1em;
+}
+.profile-photo {
+  padding: 20px 0;
+  width: 250px;
+}
+
+h1 {
+  font-family: Pacifico;
+  font-size: 2.5em;
+  display: inline-block;
+}
+h2 {
+  font-size: 1.4em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+span, p {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.4em;
+}
+strong {
+  font-weight: bold;
+}
+.quote {
+  margin-left: 30px;
+}
+.quote p {
+  font-family: Bitter;
+  line-height: 1.4em;
+}
+.quote-greeting {
+  margin-bottom: 10px;
+  color: #F7BED8;
+}
+
+.info-edu {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.personal-info {
+  background-repeat: no-repeat;
+  font-family: Bitter;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 1em;
+}
+.personal-info img {
+  margin-right: 10px;
+  width: 2em;
+}
+a:hover,
+.personal-info:hover,
+.strategy a:hover{
+  color: #B97FD5;
+}
+
+.title::before{
+  content: " ";
+  height:0.3em;
+  background-color: #F7BED8;
+  border-radius: 0.75em;
+  position: relative;
+  top:40px;
+  z-index: -1;
+  display: block;
+  animation: pulse 5s 1;
+}
+.title-section {
+  margin-bottom: 15px;
+}
+
+
+.edu-lists{
+  margin-top: 20px;
+}
+.school {
+  padding: 1em 0 1em 7em;
+  display: flex;
+  flex-direction: column;
+}
+.school h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.devine {
+  background: url(assets/edu-devine.png) no-repeat;
+  background-size: 6em;
+}
+.iksi {
+  background: url(assets/edu-iksi.png) no-repeat;
+  background-size: 6em;
+}
+
+.softwares {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.software {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.competence-container,
+.hobby-container  {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 90%;
+}
+.competence-container li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.software img,
+.competence-container img,
+.hobby img {
+  width: 90px;
+  margin-bottom: 15px;
+}
+.competences-experiences{
+  width: 55%;
+}
+.interest {
+  background: url(assets/heart.png) no-repeat;
+  background-size: 1.9em;
+  padding: 0.5em 0.5em 0.5em 2.2em;
+}
+.bar {
+  border: #B97FD5 2px solid;
+  border-radius: 31px;
+  width: 300px;
+  height: 20px;
+  margin: 5px 0;
+}
+.bar-inside{
+  background-color: #F7BED8;
+  height: 20px;
+  display: block;
+  border-radius: 22px;
+  z-index: -1;
+  position: relative;
+}
+.language {
+  margin: 20px 0;
+}
+.language h2{
+  font-family: Bitter;
+}
+.language span {
+  font-size: 1em;
+}
+.dutch{
+  width: 85%;
+}
+.indonesian {
+  width: 100%;
+}
+
+.english {
+  width: 95%;
+}
+
+.french {
+  width: 20%;
+}
+
+.experience h2,
+.strategy h2{
+background: url(assets/star.png) no-repeat;
+background-size: 25px;
+background-position-y: center;
+padding: 10px 0px 10px 30px;
+font-family: Bitter;
+}
+.experience ul li::before,
+.hyf ul li::before {
+  content: "\290F";
+  color: #F7BED8;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.experience ul {
+  margin-bottom: 10px;
+}
+.experience li {
+  font-size: 1.2em;
+}
+.strategies p,
+.hyf p {
+  font-size: 1.3em;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+}
+.strategy a {
+  color:#F7BED8;
+}
+.strategy p,
+.hyf a {
+  font-size: 1.2em;
+  padding-left: 18px;
+  font-weight: lighter;
+}
