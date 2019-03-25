@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Patua+One|Staatliches');
+
+body {
+  background-color: #FAE57C;
+  margin: 0 auto;
+}
+header {
+  //width:100%;
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+
+img {
+width: 100%;
+}
+h1 {
+  font-family: 'Staatliches', cursive;
+  color: #8AC4D0;
+  font-size: 4rem;
+}
+h2 {
+  font-family: 'Patua One', cursive;
+  font-size: 2rem;
+  color: #28527A;
+  text-transform: capitalize;
+  padding: 20px 0;
+  overflow: hidden;
+  border-right: .15em solid #FAE57C;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(50, end),
+    blinking-cursor .5s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+h3 {
+  font-family: 'Staatliches', cursive;
+  font-size: 2rem;
+  color:  #F4D160;
+  padding: 10px 5px;
+}
+h3:hover{
+  color: #28527A;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: #28527A;
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.5;
+  padding: 10px 15px;
+}
+ul {
+  margin: 0 15px;
+}
+li {
+  background-color: white;
+  margin:10px 5px;
+}
+
+section:nth-child(2) {
+  clear: both;
+}
+
+#grid-floats li {
+  float: left;
+  overflow: hidden;
+  height: 600px;
+}
+
+#grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 961px){
+  li {
+    width: calc(33.3% - 10px);
+  }
+  li:nth-child(1){
+    width: calc(50% - 10px);
+  }
+  li:nth-child(2),
+  li:nth-child(3){
+    width: calc(25% - 10px);
+  }
+}
+@media (min-width: 768px) and (max-width: 960px){
+  p {
+    font-size: 1rem;
+  }
+  li {
+    width: calc(33.3% - 10px);
+  }
+  li:nth-child(1){
+    width: calc(50% - 10px);
+  }
+  li:nth-child(2),
+  li:nth-child(3){
+    width: calc(25% - 10px);
+  }
+}
+@media (min-width: 581px) and (max-width: 768px){
+  p {
+    font-size: 1rem;
+  }
+  li:nth-child(1),
+  li:nth-child(2){
+  width: calc(50% - 10px);
+  }
+  li {
+    width: calc(33.3% - 10px);
+  }
+}
+
+@media (min-width: 361px) and (max-width: 580px){
+  h3 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  li:nth-child(1){
+    width: calc(100% - 10px);
+  }
+  li {
+  width: calc(50% - 10px);
+  }
+}
+@media (max-width: 360px){
+  li {
+    width: calc(100% - 10px);
+  }
+}
