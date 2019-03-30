@@ -90,7 +90,7 @@ section:nth-child(2) {
 
 @media (min-width: 961px){
   li {
-    width: calc(33.3% - 10px);
+    width: calc(25% - 10px);
   }
   li:nth-child(1){
     width: calc(50% - 10px);
@@ -106,15 +106,12 @@ section:nth-child(2) {
     font-size: 1rem;
   }
   li {
-    width: calc(33.3% - 10px);
+    width: calc(25% - 10px);
   }
   li:nth-child(1){
     width: calc(50% - 10px);
   }
-  li:nth-child(2),
-  li:nth-child(3){
-    width: calc(25% - 10px);
-  }
+
 }
 
 @media (min-width: 581px) and (max-width: 768px){
