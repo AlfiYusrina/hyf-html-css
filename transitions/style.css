@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Patua+One|Staatliches');
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAE57C;
+  margin: 0 auto;
+}
+
+.button {
+  font-size: 3em;
+  font-family: Patua One;
+  border: none;
+  background-color: pink;
+  padding: 0.5em 0.75em;
+  transition: background-color 0.5s ease-out;
+}
+
+.button:hover {
+  background-color: white;
+}
