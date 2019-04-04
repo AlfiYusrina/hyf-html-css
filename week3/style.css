@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700');
-
+.rotateimage {
+animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
 .container {
   padding: 10px;
   width: calc(100% - 20px);
@@ -30,16 +39,21 @@ h1 {
   font-size: 2em;
   padding: 10px;
   text-align: center;
+  font-size: 2.3em;
 }
-.school span {
-  font-size: 0.9em;
-}
+
 a {
   text-decoration: none;
   color: black;
 }
 span, p, li {
   font-family: 'Hind Siliguri', sans-serif;
+}
+h2 {
+  font-size: 1.4em;
+}
+span, p, li, a, address {
+  font-size: 1.2em;
 }
 strong {
   font-weight: bold;
@@ -49,13 +63,26 @@ margin-top: 15px;
 }
 .quote p {
   line-height: 1.4em;
+  font-size: 1.4em;
   text-align: justify;
   hyphens: auto;
 }
 .quote-greeting {
- font-size: 1.5em;
+ font-size: 2.3em;
   color: #F7BED8;
   padding-bottom: 5px;
+  padding-top: 5px;
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+animation:
+  typing 2.2s steps(50, end),
+  blinking-cursor .5s step-end infinite;
+}
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
 }
 .intro,
 .softwares,
@@ -63,6 +90,9 @@ margin-top: 15px;
 .skills {
   display: flex;
   flex-wrap: wrap;
+}
+.skills {
+  justify-content: space-between;
 }
 .info-edu section{
   width: 50%;
@@ -84,8 +114,19 @@ a:hover,
   color: #B97FD5;
 }
 .title{
-  font-size: 1.5em;
+  font-size: 2.1em;
   padding: 10px 0;
+  display: inline-block;
+}
+.title::before {
+  content: " ";
+height: 0.3em;
+background-color: #F7BED8;
+border-radius: 0.75em;
+position: relative;
+top: 36px;
+z-index: -1;
+display: block;
 }
 .edu-lists{
 padding-top: 10px;
@@ -121,11 +162,9 @@ padding-top: 10px;
   align-items: center;
 }
 .software img {
-  padding: 0 5px;
+  margin-bottom: 15px;
 }
-.soft-skills{
-width: 50%;
-}
+
 .hobby {
   justify-content: flex-end;
 }
@@ -149,8 +188,9 @@ width: 50%;
 .hobby img {
 width: 5.6em;
 }
-.competences-experiences{
-  width: 50%
+.soft-skills,
+.competences-experiences {
+  width: 48%;
 }
 .interest {
   background: url(assets/heart.png) no-repeat;
@@ -236,14 +276,30 @@ width: 5.6em;
   padding-left: 18px;
   font-weight: lighter;
 }
-@media (max-width: 528px){
+@media (max-width: 414px){
+  .title::before{
+    background-color: white;
+  }
+}
+@media (max-width: 826px){
+  .title::before{
+    background-color: white;
+  }
+}
+@media (max-width: 612px){
   .info-edu section{
     width: 100%;
+  }
+  span, p, li, a, address {
+    font-size: 1.2em;
   }
 }
 @media (min-width: 660px){
   .quote {
-    max-width: 58%;
+    max-width: 60%;
+  }
+  .profile-container {
+    width: 40%;
   }
 }
 @media (max-width: 660px) {
